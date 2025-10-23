@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback Page</title>
+</head>
+
+<body>
+    <form>
+        <label>Topic</label>
+        <select required>
+            <optgroup label="Website">
+                <option value="design">Design</option>
+                <option value="product">product</option>
+            </optgroup>
+
+            <optgroup label="Support">
+                <option value="customer-service">Customer Service</option>
+
+            </optgroup>
+        </select>
+        <br>
+
+        <label>Comments</label><br>
+        <textarea minlength="50" required placeholder="feedback here..."></textarea>
+        <br>
+
+        <label>Phone Number</label>
+        <input type="tel" pattern="\d{3}-\d{3}-\d{4}" title="Enter phone number as 123-456-7890"
+            placeholder="123-456-7890" required>
+        <br>
+
+        <button type="submit">Submit</button>
+    </form>
+</body>
+
+</html>
